@@ -1,0 +1,5 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/archlinux:latest",
+  "mounts": ["source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"],
+  "workspaceFolder": "/app"
+}
