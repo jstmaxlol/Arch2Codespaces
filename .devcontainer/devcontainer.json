@@ -1,5 +1,19 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/archlinux:latest",
+  "image": "archlinux:latest",
   "mounts": ["source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"],
-  "workspaceFolder": "/app"
+  "workspaceFolder": "/app",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.csharp",
+        "ms-vscode.go",
+        "ms-vscode.python",
+        "ms-vscode.java",
+        "ms-vscode.javascript",
+        "ms-vscode.typescript"
+      ]
+    }
+  }
 }
